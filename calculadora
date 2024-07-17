@@ -1,0 +1,23 @@
+print('----CALCULADORA----')
+num = int(input('Digite um valor'))
+num2 = int(input('Digite outro valor: '))
+print('''Você quer
+            [ 1 ] SOMAR
+            [ 2 ] SUBTRAIR
+            [ 3 ] MULTIPLICAR
+            [ 4 ] DIVIDIR''')
+tipoconta = int(input('Escolha uma opção: '))
+if tipoconta == 1:
+    soma = num + num2
+    print(f'A soma entre {num} e {num2} é de {soma}')
+elif tipoconta == 2:
+    subtração = num - num2
+    print(f'A subtração entre {num} e {num2} é de {subtração}')
+elif tipoconta == 3:
+    multiplicação = num * num2
+    print(f'A multiplicação entre {num} e {num2} é de {multiplicação}')
+elif tipoconta == 4:
+    divisão = num / num2
+    print(f'A divisão entre {num} e {num2} é de {divisão}')
+else:
+    print('Resposta inválida')
